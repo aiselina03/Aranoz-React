@@ -1,0 +1,66 @@
+.footer {
+  max-width: 100%;
+  width: 100%;
+  min-height: 40vh;
+  border-top: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 90px;
+  font-family: sans-serif;
+  .foot1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 280px;
+    align-items: center;
+    justify-content: space-between;
+    .products {
+      h3 {
+        margin: 30px 0;
+      }
+      ul {
+        line-height: 30px;
+        li {
+          color: gray;
+        }
+      }
+    }
+  }
+
+  .foot2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 60px;
+    color: gray;
+    .icons {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .footer {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    .foot1 {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 30px;
+    }
+    .foot2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 30px;
+      padding: 30px;
+    }
+  }
+}

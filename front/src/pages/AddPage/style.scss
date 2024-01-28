@@ -1,0 +1,102 @@
+.addPage {
+  width: 100%;
+  max-width: 100%;
+  min-height: 230vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  gap: 30px;
+  .forms {
+    margin-top: 60px;
+    .form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      .field {
+        outline: none;
+        width: 300px;
+        height: 30px;
+        padding: 10px;
+        font-size: 15px;
+        margin-right: 10px;
+      }
+      button {
+        font-size: 15px;
+        color: white;
+        border: none;
+        border-radius: 9px;
+        width: 300px;
+        height: 30px;
+        background-image: linear-gradient(
+          16deg,
+          #ff005a 0%,
+          #ff5d2d 64%,
+          #ffba00 100%
+        );
+        margin-right: 10px;
+      }
+    }
+  }
+  .search {
+    input {
+      outline: none;
+
+      width: 300px;
+      height: 30px;
+      padding: 10px;
+      font-size: 15px;
+      margin-right: 10px;
+    }
+  }
+  .filter {
+    button {
+      font-size: 15px;
+      color: white;
+      border: none;
+      border-radius: 9px;
+      padding: 10px 17px;
+      background-image: linear-gradient(
+        16deg,
+        #ff005a 0%,
+        #ff5d2d 64%,
+        #ffba00 100%
+      );
+      margin-right: 10px;
+    }
+  }
+  .adminPanel {
+    .table {
+      width: 100%;
+      table {
+        border: 1px solid gainsboro;
+        tr,
+        th,
+        td {
+          padding: 15px;
+          border: 1px solid gainsboro;
+        }
+        img {
+          width: 150px;
+        }
+        button {
+          font-size: 15px;
+          color: white;
+          border: none;
+          border-radius: 9px;
+          padding: 10px 17px;
+          background-image: linear-gradient(
+            16deg,
+            #ff005a 0%,
+            #ff5d2d 64%,
+            #ffba00 100%
+          );
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

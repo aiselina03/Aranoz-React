@@ -1,0 +1,41 @@
+.containerPremium {
+  max-width: 50%;
+  margin: 30px auto;
+  .premium {
+    max-width: 100%;
+    width: 100%;
+    min-height: 50vh;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cardSection {
+      margin-top: 60px;
+      .cards {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        .card {
+          width: 200px;
+          height: auto;
+          img {
+            width: 160px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .containerPremium {
+    .premium {
+      min-height: auto;
+      .cardSection {
+        .cards {
+          display: grid;
+          grid-template-columns: auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.containerDetail {
+  width: 80%;
+  margin: 40px auto;
+  .detail {
+    max-width: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .card {
+      box-shadow: 0px 10px 20px 0px rgba(0, 23, 51, 0.09);
+      display: grid;
+      grid-template-columns: auto auto;
+      transition: all 600ms;
+      width: 800px;
+      height: 600px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+      .image {
+        width: 300px;
+        img {
+          width: 100%;
+        }
+      }
+      .texts {
+        padding: 25px;
+        line-height: 30px;
+
+        h3 {
+          margin: 10px 0;
+        }
+        .add {
+          transition: all 600ms;
+
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          gap: 20px;
+          .addTo {
+            color: #ff3368;
+            font-size: 18px;
+          }
+          .fa-heart {
+            font-size: 20px;
+            cursor: pointer;
+          }
+          .fa-eye {
+            font-size: 20px;
+            cursor: pointer;
+          }
+          a {
+            color: black;
+          }
+        }
+        p{
+          line-height: 25px;
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}

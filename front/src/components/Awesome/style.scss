@@ -1,0 +1,88 @@
+.containerAwesome {
+  max-width: 80%;
+  margin: 60px auto;
+  .awesome {
+    max-width: 100%;
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+    }
+    .cardSection {
+      margin-top: 60px;
+      .cards {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 80px;
+        .card {
+          width: 260px;
+          height: 440px;
+
+          transition: all 600ms;
+          cursor: pointer;
+          &:hover {
+            box-shadow: 0px 10px 20px 0px rgba(0, 23, 51, 0.09);
+            .texts {
+              .add {
+                opacity: 1;
+              }
+            }
+          }
+          .texts {
+            padding: 25px;
+            line-height: 30px;
+
+            h3 {
+              margin: 10px 0;
+            }
+            .add {
+              transition: all 600ms;
+              opacity: 0;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .addTo {
+                color: #ff3368;
+                font-size: 18px;
+              }
+              .fa-heart {
+                font-size: 20px;
+                cursor: pointer;
+              }
+              .fa-eye {
+                font-size: 20px;
+                cursor: pointer;
+              }
+              a {
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .containerAwesome {
+    .awesome {
+      min-height: auto;
+      .cardSection {
+        .cards {
+          display: grid;
+          grid-template-columns: auto;
+          gap: 40px;
+        }
+      }
+    }
+  }
+}
