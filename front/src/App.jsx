@@ -5,6 +5,7 @@ import Basket from "./pages/Basket";
 import Detail from "./pages/Detail";
 import Wishlist from "./pages/Wishlist";
 import MainLayout from "./layouts/MainLayout";
+import AranozEditPanel from "./pages/AranozEditPanel";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/basket" element={<Basket />} />
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/detail/:id" element={<Detail />} />
+            <Route path="/aranozEditPanel/:id" element={<AranozEditPanel/>} />
           </Route>
         </Routes>
       </BrowserRouter>

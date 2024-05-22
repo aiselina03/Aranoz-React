@@ -50,3 +50,47 @@
     }
   }
 }
+
+
+@media only screen and (min-width:300px) and (max-width: 481px){
+  .basketContainer {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .basket {
+      max-width: 100%;
+      width: 100%;
+      min-height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 60px;
+  
+      .table {
+        table {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          th{
+            display: none;
+          }
+          tr,
+          td {
+            display: list-item;
+            padding: 15px;
+           
+          }
+          img {
+            width: 150px;
+          }
+  
+          
+        }
+      }
+    }
+  }
+  
+}

@@ -3,6 +3,7 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "./style.scss";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 function AddPage() {
   const [products, setProducts] = useState([]);
@@ -122,7 +123,7 @@ function AddPage() {
           </button>
           <button onClick={() => setSort(null)}>Default</button>
           <button onClick={() => setSort({ property: "price", asc: true })}>
-           Price <i className="fa-solid fa-arrow-up-9-1"></i>
+            Price <i className="fa-solid fa-arrow-up-9-1"></i>
           </button>
           <button onClick={() => setSort({ property: "price", asc: false })}>
             Price <i className="fa-solid fa-arrow-down-9-1"></i>
@@ -137,6 +138,7 @@ function AddPage() {
                   <th>Name</th>
                   <th>Price</th>
                   <th>Delete</th>
+                  <th>Update</th>
                 </tr>
               </thead>
               <tbody>
@@ -172,6 +174,9 @@ function AddPage() {
                         <button onClick={() => deleteById(x._id)}>
                           Delete
                         </button>
+                      </td>
+                      <td>
+                        <Link  to={`/aranozEditPanel/${x._id}`}><button>Update</button></Link>
                       </td>
                     </tr>
                   ))}
